@@ -11,7 +11,7 @@ import com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookVariableDef.HookV
 public class HookVariableDef extends ConstantDefiner<HookVariable> {
 	public static final HookVariable MCANONICALDISPLAYNAME = new HookVariable(
 			"MCANONICALDISPLAYNAME",
-			"az"
+			"aL"
 
 			/** CLASS: {@link HookClassDef.RECEIVED_SNAP} =============================*/
 			// CODE CHUNK ================================================================
@@ -39,7 +39,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable SNAP_IS_ZIPPED = new HookVariable(
 			"SNAP_IS_ZIPPED",
-			"ax"
+			"aJ"
 
 			/** CLASS: {@link HookClassDef.RECEIVED_SNAP} ============================*/
 			// CODE CHUNK ================================================================
@@ -404,9 +404,9 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	// ===========================================================================
 
-	public static final HookVariable UI_MODE_NAME = new HookVariable(
-			"UI_MODE_NAME",
-			"d"
+	//public static final HookVariable UI_MODE_NAME = new HookVariable(
+			//"UI_MODE_NAME",
+			//"d"
 
 			/** CLASS: {@link HookClassDef.CHEETAH_ALLOCATOR}=============================*/
 			// CODE CHUNK ================================================================
@@ -417,9 +417,9 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	// ===========================================================================
 
-	public static final HookVariable UI_MODE_ENUM = new HookVariable(
-			"UI_MODE_ENUM",
-			"b"
+	//public static final HookVariable UI_MODE_ENUM = new HookVariable(
+			//"UI_MODE_ENUM",
+			//"b"
 
 			/** CLASS: {@link HookClassDef.CHEETAH_ALLOCATOR}=============================*/
 			// CODE CHUNK ================================================================
