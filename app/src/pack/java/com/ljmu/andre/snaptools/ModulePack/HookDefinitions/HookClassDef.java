@@ -131,38 +131,10 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 			"COUNTDOWNTIMER_VIEW",
 			"com.snap.opera.view.CountdownTimerView"
 	); // com.snapchat.android.framework.ui.views.CountdownTimerView* 
-	public static final HookClass LENS_AUTHENTICATION = new HookClass(
-			"LENS_AUTHENTICATION",
-			"com.snapchat.android.app.feature.lenses.internal.security.LensesSecurityManager"
-	); // hvm 
 	public static final HookClass ENUM_SNAP_ADVANCE_MODES = new HookClass(
 			"ENUM_SNAP_ADVANCE_MODES",
 			"slz"
 	); // tpt 
-	public static final HookClass LENS = new HookClass(
-			"LENS",
-			"afmk"
-	); // hxb 
-	public static final HookClass LENS_CATEGORY_RESOLVER = new HookClass(
-			"LENS_CATEGORY_RESOLVER",
-			"afmr"
-	); // hxh 
-	public static final HookClass LENS_LOADER = new HookClass(
-			"LENS_LOADER",
-			"afgg"
-	); // hum 
-	public static final HookClass LENS_CONTEXT_HOLDER = new HookClass(
-			"LENS_CONTEXT_HOLDER",
-			"afmx"
-	); // hum 
-	public static final HookClass LENS_CAMERA_CONTEXT_ENUM = new HookClass(
-			"LENS_CAMERA_CONTEXT_ENUM",
-			"afmo"
-	); // hum 
-	public static final HookClass LENS_APPLICATION_CONTEXT_ENUM = new HookClass(
-			"LENS_APPLICATION_CONTEXT_ENUM",
-			"afml"
-	); // hum 
 	public static final HookClass STORY_LOADER = new HookClass(
 			"STORY_LOADER",
 			"zul"
@@ -194,43 +166,7 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	public static final HookClass CAMERA_FRAGMENT = new HookClass(
 			"CAMERA_FRAGMENT",
 			"aayu"
-	); // com.snapchat.android.app.main.camera.CameraFragmentV1 
-	public static final HookClass ENUM_LENS_TYPE = new HookClass(
-			"ENUM_LENS_TYPE",
-			"afmk$b"
-	); // hxb$b 
-	public static final HookClass LENS_CATEGORY = new HookClass(
-			"LENS_CATEGORY",
-			"afmt"
-	); // hxj 
-	public static final HookClass LENS_SLUG = new HookClass(
-			"LENS_SLUG",
-			"avbs"
-	); // vdi 
-	public static final HookClass LENS_TRACK = new HookClass(
-			"LENS_TRACK",
-			"avgb"
-	); // vha 
-	//	public static final HookClass LENS_ASSET = new HookClass(
-//			/*LENS_ASSET*/ decryptMsg(new byte[]{103, -30, 45, 86, 2, -11, -90, -118, -30, -38, 18, -82, -100, 100, 81, -9}),
-//			/*qvy*/ decryptMsg(new byte[]{59, -101, -61, 47, 114, 126, 100, -69, -33, 38, -46, 109, -46, 5, -107, 12})
-//	);
-	public static final HookClass LENS_ASSET_BUILT = new HookClass(
-			"LENS_ASSET_BUILT",
-			"afmm"
-	); // hxd 
-	public static final HookClass LENS_ASSET_TYPE = new HookClass(
-			"LENS_ASSET_TYPE",
-			"afmm$a"
-	); // hxd$a 
-	public static final HookClass LENS_ASSET_LOAD_MODE = new HookClass(
-			"LENS_ASSET_LOAD_MODE",
-			"afnj"
-	); // hxq 
-	public static final HookClass ENUM_LENS_ACTIVATOR_TYPE = new HookClass(
-			"ENUM_LENS_ACTIVATOR_TYPE",
-			"com.looksery.sdk.domain.Category.ActivatorType"
-	); // com.looksery.sdk.domain.Category.ActivatorType 
+	); // com.snapchat.android.app.main.camera.CameraFragmentV1  
 	public static final HookClass FONT_CLASS = new HookClass(
 			"FONT_CLASS",
 			"android.graphics.Typeface"
@@ -270,35 +206,7 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	public static final HookClass CHAT_BODY_METADATA = new HookClass(
 			"CHAT_BODY_METADATA",
 			"auuq"
-	); // uwu 
-	public static final HookClass GEOFILTER_VIEW = new HookClass(
-			"GEOFILTER_VIEW",
-			"com.snapchat.android.app.shared.feature.preview.ui.smartfilters.geofilterview.GeofilterViewV2"
-	); // com.snapchat.android.app.shared.feature.preview.ui.smartfilters.GeofilterView 
-	public static final HookClass IMAGE_GEOFILTER_VIEW = new HookClass(
-			"IMAGE_GEOFILTER_VIEW",
-			"anhh"
-	); // com.snapchat.android.app.shared.feature.preview.ui.smartfilters.ImageGeofilterView 
-	public static final HookClass FILTER_METADATA = new HookClass(
-			"FILTER_METADATA",
-			"anlt"
-	); // ovk 
-	public static final HookClass SERIALIZABLE_FILTER_METADATA = new HookClass(
-			"SERIALIZABLE_FILTER_METADATA",
-			"aups"
-	); // usn 
-	public static final HookClass FILTER_METADATA_LOADER = new HookClass(
-			"FILTER_METADATA_LOADER",
-			"amrc"
-	); // fek 
-	public static final HookClass FILTER_METADATA_CREATOR = new HookClass(
-			"FILTER_METADATA_CREATOR",
-			"annh$2"
-	); // owp$2 
-	public static final HookClass GEOFILTER_VIEW_CREATOR = new HookClass(
-			"GEOFILTER_VIEW_CREATOR",
-			"anbn"
-	); // fdr 
+	); // uwu  
 	public static final HookClass CHAT_NOTIFICATION_CREATOR = new HookClass(
 			"CHAT_NOTIFICATION_CREATOR",
 			"ahnj"
@@ -331,10 +239,6 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 			"CHAT_V10_BUILDER",
 			"ahvq"
 	); // kdd 
-	//public static final HookClass PROFILE_SETTINGS_CREATOR = new HookClass(
-			//"PROFILE_SETTINGS_CREATOR",
-			//"ipn"
-	); // hem 
 	public static final HookClass CHEETAH_PROFILE_SETTINGS_CREATOR = new HookClass(
 			"CHEETAH_PROFILE_SETTINGS_CREATOR",
 			"aeiu"
@@ -342,23 +246,10 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	public static final HookClass AB_TEST_MANAGER = new HookClass(
 			"AB_TEST_MANAGER",
 			"jul"
-	); // rak 
-	//public static final HookClass CHEETAH_EXPERIMENT_ENUM = new HookClass(
-			//"CHEETAH_EXPERIMENT_ENUM",
-			//"dzk$a$a"
-	); // dgq$a$a 
-	//public static final HookClass CHEETAH_ALLOCATOR = new HookClass(
-			//"CHEETAH_ALLOCATOR",
-			//"dzl"
 	); // dgr 
 	public static final HookClass EXPERIMENT_BASE = new HookClass(
 			"EXPERIMENT_BASE",
 			"apqt"
-	); // rbr 
-	//public static final HookClass CHEETAH_EXPERIMENT = new HookClass(
-			//"CHEETAH_EXPERIMENT",
-			//"dzk$1$1"
-	); // dgq$1$1 
 	public static final HookClass STORY_MANAGER = new HookClass(
 			"STORY_MANAGER",
 			"aadm"
