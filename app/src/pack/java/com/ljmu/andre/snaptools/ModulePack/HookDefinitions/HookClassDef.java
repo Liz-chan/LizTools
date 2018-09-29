@@ -59,14 +59,6 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 			"RECEIVED_SNAP_ENCRYPTION",
 			"aiue"
 	); // kyr 
-	public static final HookClass RECEIVED_SNAP_PAYLOAD_BUILDER = new HookClass(
-			"RECEIVED_SNAP_PAYLOAD_BUILDER",
-			"zly"
-	); // dfy 
-	public static final HookClass STORY_SNAP_PAYLOAD_BUILDER = new HookClass(
-			"STORY_SNAP_PAYLOAD_BUILDER",
-			"zxm"
-	); // dnj 
 	public static final HookClass GROUP_SNAP_METADATA = new HookClass(
 			"GROUP_SNAP_METADATA",
 			"aicy"
@@ -75,10 +67,6 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 			"STORY_SNAP",
 			"ankl"
 	); // oud 
-	public static final HookClass STORY_STATUS_UPDATER = new HookClass(
-			"STORY_STATUS_UPDATER",
-			"zyc"
-	); // dnu 
 	public static final HookClass STORY_METADATA_LOADER = new HookClass(
 			"STORY_METADATA_LOADER",
 			"aaic"
@@ -210,27 +198,11 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	public static final HookClass CHAT_NOTIFICATION_CREATOR = new HookClass(
 			"CHAT_NOTIFICATION_CREATOR",
 			"ahnj"
-	); // jvy 
-	public static final HookClass NETWORK_MANAGER = new HookClass(
-			"NETWORK_MANAGER",
-			"apbv"
-	); // qlc 
-	public static final HookClass NETWORK_DISPATCHER = new HookClass(
-			"NETWORK_DISPATCHER",
-			"ahql"
-	); // jyp 
+	); // jvy  
 	//	public static final HookClass CHAT_MESSAGE_METADATA = new HookClass(
 //			/*CHAT_MESSAGE_METADATA*/ decryptMsg(new byte[]{-50, 44, 120, -82, 113, -65, 81, -120, 5, -126, -76, -93, 71, -33, -116, -17, 35, 108, 78, -36, 77, -82, 21, 99, -117, 72, 87, 32, 49, 74, 108, -30}),
 //			/*ktw*/ decryptMsg(new byte[]{123, 84, -31, -44, -43, 3, -88, 68, 30, 56, -104, 107, 47, -128, 23, 71})
 //	);
-	public static final HookClass CHAT_GROUP_VIEW_MARKER = new HookClass(
-			"CHAT_GROUP_VIEW_MARKER",
-			"ahsh"
-	); // kal 
-	public static final HookClass CHAT_DIRECT_VIEW_MARKER = new HookClass(
-			"CHAT_DIRECT_VIEW_MARKER",
-			"ahrf"
-	); // jzh 
 	public static final HookClass CHAT_V3_FRAGMENT = new HookClass(
 			"CHAT_V3_FRAGMENT",
 			"com.snapchat.android.app.feature.messaging.chat.fragment.ChatV3Fragment"
@@ -239,10 +211,6 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 			"CHAT_V10_BUILDER",
 			"ahvq"
 	); // kdd 
-	public static final HookClass CHEETAH_PROFILE_SETTINGS_CREATOR = new HookClass(
-			"CHEETAH_PROFILE_SETTINGS_CREATOR",
-			"aeiu"
-	); // hgr 
 	public static final HookClass AB_TEST_MANAGER = new HookClass(
 			"AB_TEST_MANAGER",
 			"jul"
