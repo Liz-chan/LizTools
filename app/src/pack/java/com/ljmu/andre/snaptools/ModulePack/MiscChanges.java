@@ -66,37 +66,6 @@ public class MiscChanges extends ModuleHelper {
 	@Override public void loadHooks(ClassLoader snapClassLoader, Activity snapActivity) {
 		String currentFontFile = getPref(CURRENT_FONT);
 
-//		try {
-//			Class cheetahModeEnumClass = resolveHookClass(CHEETAH_EXPERIMENT_ENUM);
-//			Class cheetahExperimentClass = resolveHookClass(CHEETAH_EXPERIMENT);
-//
-//			boolean forceCheetah = getPref(FORCE_CHEETAH);
-//
-//			hookMethod(
-//					CHEETAH_DEFINE_MODE,
-//					new XC_MethodReplacement() {
-//						@Override protected Object replaceHookedMethod(MethodHookParam param) throws Throwable {
-//							setObjectField(UI_MODE_NAME, param.thisObject, forceCheetah ? "CHEETAH_ANDROID" : null);
-//							setObjectField(UI_MODE_ENUM, param.thisObject,
-//									Enum.valueOf(
-//											cheetahModeEnumClass,
-//											forceCheetah ? "FULL_CHEETAH" : "OLD_DESIGN"
-//									)
-//							);
-//
-//							if (forceCheetah) {
-//								Object cheetahExperiment = newInstance(cheetahExperimentClass);
-//								callHook(EXPERIMENT_PUSH_STATE, cheetahExperiment);
-//							}
-//
-//							return null;
-//						}
-//					});
-//		} catch (HookNotFoundException e) {
-//			Timber.e(e);
-//			moduleLoadState.fail();
-//		}
-
 		if (!currentFontFile.equals("Default")) {
 			hookMethod(
 					FONT_HOOK,
