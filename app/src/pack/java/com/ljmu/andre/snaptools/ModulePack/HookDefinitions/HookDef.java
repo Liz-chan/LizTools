@@ -35,7 +35,7 @@ import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.C
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_NOTIFICATION_CREATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_VIDEO;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_VIDEO_METADATA;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHEETAH_ALLOCATOR;
+//import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHEETAH_ALLOCATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHEETAH_PROFILE_SETTINGS_CREATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.COUNTDOWNTIMER_VIEW;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.DOWNLOADER_RUNNABLE;
@@ -60,7 +60,7 @@ import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.N
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.NETWORK_MANAGER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.NEW_CONCENTRIC_TIMERVIEW;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.OPERA_PAGE_VIEW;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.PROFILE_SETTINGS_CREATOR;
+//import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.PROFILE_SETTINGS_CREATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.RECEIVED_SNAP;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.RECEIVED_SNAP_ENCRYPTION;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.RECEIVED_SNAP_PAYLOAD_BUILDER;
@@ -98,11 +98,11 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook STREAM_TYPE_CHECK_BYPASS = new Hook(
 			"STREAM_TYPE_CHECK_BYPASS",
-			ENCRYPTED_STREAM_BUILDER, "a", "uo", int.class, int.class
+			ENCRYPTED_STREAM_BUILDER, "a", "ws", int.class, int.class
 	);
 	public static final Hook STORY_GET_ALGORITHM = new Hook(
 			"STORY_GET_ALGORITHM",
-			STORY_SNAP, "aT"
+			STORY_SNAP, "ar"
 	);
 	public static final Hook DIRECT_GET_ALGORITHM = new Hook(
 			"DIRECT_GET_ALGORITHM",
@@ -118,7 +118,7 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook CHAT_VIDEO_PATH = new Hook(
 			"CHAT_VIDEO_PATH",
-			CHAT_VIDEO, "dq_"
+			CHAT_VIDEO, "eG_"
 	);
 	public static final Hook GROUP_GET_ALGORITHM = new Hook(
 			"GROUP_GET_ALGORITHM",
@@ -130,7 +130,7 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook SENT_BATCHED_SNAP = new Hook(
 			"SENT_BATCHED_SNAP",
-			SENT_BATCHED_VIDEO, "a", "rba$b"
+			SENT_BATCHED_VIDEO, "a", "ansq$b"
 	);
 	public static final Hook CONSTRUCTOR_OPERA_PAGE_VIEW = new Hook(
 			"CONSTRUCTOR_OPERA_PAGE_VIEW",
@@ -319,9 +319,9 @@ public class HookDef extends ConstantDefiner<Hook> {
 			"CAPTION_CREATE_HOOK",
 			CAPTION_MANAGER_CLASS, "onCreateActionMode", ActionMode.class, Menu.class
 	);
-	public static final Hook CHEETAH_DEFINE_MODE = new Hook(
-			"CHEETAH_DEFINE_MODE",
-			CHEETAH_ALLOCATOR, "j"
+	//public static final Hook CHEETAH_DEFINE_MODE = new Hook(
+			//"CHEETAH_DEFINE_MODE",
+			//CHEETAH_ALLOCATOR, "j"
 	);
 	public static final Hook EXPERIMENT_PUSH_STATE = new Hook(
 			"EXPERIMENT_PUSH_STATE",
