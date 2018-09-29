@@ -25,8 +25,6 @@ import java.util.List;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.AB_TEST_MANAGER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CAMERA_FRAGMENT;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CAPTION_MANAGER_CLASS;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_DIRECT_VIEW_MARKER;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_GROUP_VIEW_MARKER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_IMAGE_METADATA;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_MESSAGE_VIEW_HOLDER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_METADATA;
@@ -35,35 +33,19 @@ import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.C
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_NOTIFICATION_CREATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_VIDEO;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHAT_VIDEO_METADATA;
-//import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHEETAH_ALLOCATOR;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.CHEETAH_PROFILE_SETTINGS_CREATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.COUNTDOWNTIMER_VIEW;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.DOWNLOADER_RUNNABLE;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.ENCRYPTED_STREAM_BUILDER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.ENCRYPTION_ALGORITHM;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.EXPERIMENT_BASE;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.FILTER_METADATA;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.FILTER_METADATA_CREATOR;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.FILTER_METADATA_LOADER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.FONT_CLASS;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.FRIEND_PROFILE_POPUP_FRAGMENT;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.GEOFILTER_VIEW;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.GEOFILTER_VIEW_CREATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.GROUP_SNAP_METADATA;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.IMAGE_GEOFILTER_VIEW;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.LENS;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.LENS_AUTHENTICATION;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.LENS_CATEGORY_RESOLVER;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.LENS_LOADER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.META_DATA_BUILDER;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.NETWORK_DISPATCHER;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.NETWORK_MANAGER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.NEW_CONCENTRIC_TIMERVIEW;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.OPERA_PAGE_VIEW;
-//import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.PROFILE_SETTINGS_CREATOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.RECEIVED_SNAP;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.RECEIVED_SNAP_ENCRYPTION;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.RECEIVED_SNAP_PAYLOAD_BUILDER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.SCREENSHOT_DETECTOR;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.SENT_BATCHED_VIDEO;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.SENT_SNAP_BASE;
@@ -79,8 +61,6 @@ import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.S
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_METADATA_LOADER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_SNAP;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_SNAP_AD_LOADER;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_SNAP_PAYLOAD_BUILDER;
-import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.STORY_STATUS_UPDATER;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.TEXTURE_VIDEO_VIEW;
 import static com.ljmu.andre.snaptools.ModulePack.HookDefinitions.HookClassDef.USER_PREFS;
 
@@ -156,48 +136,7 @@ public class HookDef extends ConstantDefiner<Hook> {
 			TEXTURE_VIDEO_VIEW, "setLooping", boolean.class
 	);
 	// ===========================================================================
-
-	// SHARING ===================================================================
-	public static final Hook REPLACE_SHARED_IMAGE = new Hook(
-			"REPLACE_SHARED_IMAGE",
-			CAMERA_FRAGMENT, "a", Bitmap.class, Integer.class, String.class, long.class, boolean.class, int.class, "sbr$b"
-	);
-	public static final Hook REPLACE_SHARED_VIDEO = new Hook(
-			"REPLACE_SHARED_VIDEO",
-			CAMERA_FRAGMENT, "a", Uri.class, int.class, boolean.class, "trq", long.class
-	);
-	public static final Hook BATCHED_MEDIA_LIMITER = new Hook(
-			"BATCHED_MEDIA_LIMITER",
-			SENT_VIDEO, "ar"
-	);
-	public static final Hook CAMERA_IS_VISIBLE = new Hook(
-			"CAMERA_IS_VISIBLE",
-			CAMERA_FRAGMENT, "onVisible"
-	);
-	// ===========================================================================
-
-	// LENSES ====================================================================
-	public static final Hook LENS_LOADING = new Hook(
-			"LENS_LOADING",
-			LENS_LOADER, "a", List.class
-	);
-	public static final Hook CHECK_LENS_AUTH = new Hook(
-			"CHECK_LENS_AUTH",
-			LENS_AUTHENTICATION, "a", LENS.getStrClass(), String.class
-	);
-	public static final Hook CHECK_LENS_CATEGORY_AUTH = new Hook(
-			"CHECK_LENS_CATEGORY_AUTH",
-			LENS_AUTHENTICATION, "a", "jkq", String.class
-	);
-	public static final Hook CHECK_LENS_ASSET_AUTH = new Hook(
-			"CHECK_LENS_ASSET_AUTH",
-			LENS_AUTHENTICATION, "a", "jkm", String.class
-	);
-	public static final Hook RESOLVE_LENS_CATEGORY = new Hook(
-			"RESOLVE_LENS_CATEGORY",
-			LENS_CATEGORY_RESOLVER, "a", String.class
-	);
-
+	
 	// ===========================================================================
 
 	// STORY BLOCKING ============================================================
@@ -283,31 +222,6 @@ public class HookDef extends ConstantDefiner<Hook> {
 //	);
 	// ===========================================================================
 
-	// CUSTOM FILTERS ============================================================
-	public static final Hook GEOFILTER_SHOULD_SUBSAMPLE = new Hook(
-			"GEOFILTER_SHOULD_SUBSAMPLE",
-			IMAGE_GEOFILTER_VIEW, "a", boolean.class
-	);
-	public static final Hook FILTER_LOAD_METADATA = new Hook(
-			"FILTER_LOAD_METADATA",
-			FILTER_METADATA_LOADER, "a", List.class, Context.class
-	);
-	public static final Hook CREATE_FILTER_METADATA = new Hook(
-			"CREATE_FILTER_METADATA",
-			FILTER_METADATA_CREATOR, "e"
-	);
-	public static final Hook GET_GEOFILTER_CONTENT_VIEW = new Hook(
-			"GET_GEOFILTER_CONTENT_VIEW",
-			GEOFILTER_VIEW, "c"
-	);
-	public static final Hook CREATE_GEOFILTER_VIEW = new Hook(
-			"CREATE_GEOFILTER_VIEW",
-			GEOFILTER_VIEW_CREATOR, "a", FILTER_METADATA.getStrClass(), Context.class, "bee"
-	);
-	public static final Hook GEOFILTER_TAPPED = new Hook(
-			"GEOFILTER_TAPPED",
-			IMAGE_GEOFILTER_VIEW, "a", MotionEvent.class
-	);
 	// ===========================================================================
 
 	// MISC HOOKS ================================================================
@@ -329,64 +243,6 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 
 	// ===========================================================================
-
-	// STEALTH VIEWING ===========================================================
-	public static final Hook GET_SNAP_ID = new Hook(
-			"GET_SNAP_ID",
-			SNAP_BASE, "p"
-	);
-	public static final Hook SET_SNAP_STATUS = new Hook(
-			"SET_SNAP_STATUS",
-			SNAP_BASE, "a", SNAP_STATUS.getStrClass()
-	);
-	public static final Hook MARK_STORY_VIEWED = new Hook(
-			"MARK_STORY_VIEWED",
-			STORY_STATUS_UPDATER, "a", "qsj", STORY_SNAP.getStrClass(), boolean.class
-	);
-	public static final Hook GET_RECEIVED_SNAP_PAYLOAD = new Hook(
-			"GET_RECEIVED_SNAP_PAYLOAD",
-			RECEIVED_SNAP_PAYLOAD_BUILDER, "getRequestPayload"
-	);
-	public static final Hook GET_STORY_SNAP_PAYLOAD = new Hook(
-			"GET_STORY_SNAP_PAYLOAD",
-			STORY_SNAP_PAYLOAD_BUILDER, "getRequestPayload"
-	);
-	public static final Hook NETWORK_EXECUTE_SYNC = new Hook(
-			"NETWORK_EXECUTE_SYNC",
-			NETWORK_MANAGER, "executeSynchronously"
-	);
-	public static final Hook DISPATCH_CHAT_UPDATE = new Hook(
-			"DISPATCH_CHAT_UPDATE",
-			NETWORK_DISPATCHER, "a", "mnl", "wlj"
-	);
-	//	public static final Hook MARK_CHAT_VIEWED = new Hook(
-//			/*MARK_CHAT_VIEWED*/ decryptMsg(new byte[]{-101, 79, 111, -51, -99, 5, 77, 0, 109, 109, -124, -97, -79, 100, -83, 91, 104, -50, 116, -85, 125, 59, 23, -57, 29, -117, 35, 62, -41, 17, -14, 66}),
-//			CHAT_MESSAGE_METADATA, "b", long.class
-//	);
-	public static final Hook MARK_GROUP_CHAT_VIEWED = new Hook(
-			"MARK_GROUP_CHAT_VIEWED",
-			CHAT_GROUP_VIEW_MARKER, "b", "mnl"
-	);
-	public static final Hook MARK_DIRECT_CHAT_VIEWED_PRESENT = new Hook(
-			"MARK_DIRECT_CHAT_VIEWED_PRESENT",
-			CHAT_DIRECT_VIEW_MARKER, "a", "mlq", "tfm"
-	);
-	public static final Hook MARK_DIRECT_CHAT_VIEWED_UNPRESENT = new Hook(
-			"MARK_DIRECT_CHAT_VIEWED_UNPRESENT",
-			CHAT_DIRECT_VIEW_MARKER, "b", "tfm", "mlq"
-	);
-	//	public static final Hook CHAT_V3_FRAGMENT_CREATED = new Hook(
-//			/*CHAT_V3_FRAGMENT_CREATED*/ decryptMsg(new byte[]{60, 22, -104, 60, 102, 6, 52, -7, -61, 1, 3, -76, 31, 11, 51, -119, 106, -55, -12, 110, 111, 22, -106, -116, 95, 83, 5, 77, -114, 21, -99, -30}),
-//			CHAT_V3_FRAGMENT, "onCreateView", LayoutInflater.class, ViewGroup.class, Bundle.class
-//	);
-	public static final Hook CREATE_PROFILE_SETTINGS_VIEW = new Hook(
-			"CREATE_PROFILE_SETTINGS_VIEW",
-			PROFILE_SETTINGS_CREATOR, "a", ViewGroup.class, int.class
-	);
-	public static final Hook CREATE_CHEETAH_PROFILE_SETTINGS_VIEW = new Hook(
-			"CREATE_CHEETAH_PROFILE_SETTINGS_VIEW",
-			CHEETAH_PROFILE_SETTINGS_CREATOR, null, View.class
-	);
 	// ===========================================================================
 
 	// FORCED HOOKS ==============================================================
