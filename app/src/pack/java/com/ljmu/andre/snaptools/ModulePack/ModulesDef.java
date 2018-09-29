@@ -36,13 +36,6 @@ import com.ljmu.andre.snaptools.ModulePack.ModulesDef.Modules;
 
 	// ===========================================================================
 
-	public static final Modules LENS_COLLECTOR = new Modules(
-			3,
-			"Lens Collector",
-			LensCollector.class,
-			"Collects your daily Lenses so that you can choose to enable/disable whichever lenses you desire"
-	);
-
 	// ===========================================================================
 
 	public static final Modules CHAT_MANAGER = new Modules(
@@ -103,39 +96,9 @@ import com.ljmu.andre.snaptools.ModulePack.ModulesDef.Modules;
 
 	// ===========================================================================
 
-	public static final Modules SHARING = new Modules(
-			10,
-			"Sharing",
-			Sharing.class,
-			"Convert images shared to Snapchat into snaps that can be added to your story as opposed to chat media"
-	);
-
 	// ===========================================================================
 
-	public static final Modules CUSTOM_FILTERS = new Modules(
-			11,
-			"Custom Filters",
-			CustomFilters.class,
-			"Allows for custom images and a Now Playing filter to be loaded alongside Snapchat filters"
-	);
-
 	// ===========================================================================
-
-	public static final Modules STEALTH_VIEWING = new Modules(
-			12,
-			"Stealth Viewing",
-			StealthViewing.class,
-			"Allows you to view chats and snaps without marking them as viewed"
-	);
-
-	// ===========================================================================
-
-	public static final Modules ACCOUNT_MANAGER = new Modules(
-			13,
-			"Account Manager",
-			AccountManager.class,
-			"Allows for safely and securely swapping between Snapchat accounts, along with other account management features"
-	);
 
 	// ===========================================================================
 
