@@ -145,28 +145,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	// ===========================================================================
 
-	public static final HookVariable LENS_CATEGORY = new HookVariable(
-			"LENS_CATEGORY",
-			"a"
-			/** CLASS: {@link HookClassDef.LENS_CATEGORY} ================================*/
-			// CODE CHUNK ================================================================
-			/**
-			 public final String a;
-			 */
-	); 
-
 	// ===========================================================================
-
-	public static final HookVariable LENS_ACTIVATOR = new HookVariable(
-			"LENS_ACTIVATOR",
-			"b"
-
-			/** CLASS: {@link HookClassDef.LENS_CATEGORY} ================================*/
-			// CODE CHUNK ================================================================
-			/**
-			 public final ActivatorType b;
-			 */
-	); 
 
 	// ===========================================================================
 	public static final HookVariable SNAPCAPTIONVIEW_CONTEXT = new HookVariable(
@@ -268,30 +247,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	// ===========================================================================
 
-	public static final HookVariable LENS_CATEGORY_MAP = new HookVariable(
-			"LENS_CATEGORY_MAP",
-			"a"
-
-			/** CLASS: {@link HookClassDef.LENS_CATEGORY_RESOLVER} =======================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * public final Map<String, jkq> a = new HashMap();
-			 */
-	); 
-
 	// ===========================================================================
-
-	public static final HookVariable GEOFILTER_VIEW_CREATION_ARG3 = new HookVariable(
-			"GEOFILTER_VIEW_CREATION_ARG3",
-			"a"
-
-			/** CLASS: {@link HookClassDef.FILTER_METADATA_LOADER} =======================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * arrayList.add(ghb.a(a, context, this.a));
-			 *                                 ^^^^^^
-			 */
-	); 
 
 	// ===========================================================================
 
@@ -404,30 +360,6 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	// ===========================================================================
 
-	//public static final HookVariable UI_MODE_NAME = new HookVariable(
-			//"UI_MODE_NAME",
-			//"d"
-
-			/** CLASS: {@link HookClassDef.CHEETAH_ALLOCATOR}=============================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * private volatile String d = null;
-			 */
-	); 
-
-	// ===========================================================================
-
-	//public static final HookVariable UI_MODE_ENUM = new HookVariable(
-			//"UI_MODE_ENUM",
-			//"b"
-
-			/** CLASS: {@link HookClassDef.CHEETAH_ALLOCATOR}=============================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * private volatile dzk$a$a b = dzk$a$a.OLD_DESIGN;
-			 */
-	); 
-
 	// ===========================================================================
 
 	public static final HookVariable STORY_COLLECTION_MAP = new HookVariable(
@@ -443,33 +375,6 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 	); 
 
 	// ===========================================================================
-
-	public static final HookVariable FILTER_METADATA_CACHE = new HookVariable(
-			"FILTER_METADATA_CACHE",
-			"a"
-
-			/** CLASS: {@link HookClassDef.FILTER_METADATA_CREATOR}=======================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * private /* synthetic / qvs a;
-			 */
-	); 
-
-	// ===========================================================================
-
-	public static final HookVariable FILTER_SERIALIZABLE_METADATA = new HookVariable(
-			"FILTER_SERIALIZABLE_METADATA",
-			"a"
-
-			/** CLASS: qvs ===============================================================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * qvs -> Search for "EncryptedGeoLoggingData is null: server returned empty response for"
-			 *
-			 * public final wsa a;
-			 * wsa -> {@link HookClassDef.SERIALIZABLE_FILTER_METADATA}
-			 */
-	); 
 
 	// ===========================================================================
 
