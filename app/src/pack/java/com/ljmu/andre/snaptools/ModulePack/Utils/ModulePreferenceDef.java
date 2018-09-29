@@ -6,7 +6,6 @@ import android.widget.ImageView.ScaleType;
 import com.ljmu.andre.ConstantDefiner.ConstantDefiner;
 import com.ljmu.andre.GsonPreferences.Preferences.ConditionalCheck;
 import com.ljmu.andre.GsonPreferences.Preferences.Preference;
-import com.ljmu.andre.snaptools.ModulePack.Fragments.KotlinViews.StealthLocationOverlay.StealthPosition;
 import com.ljmu.andre.snaptools.ModulePack.Notifications.DotNotification.DotLocation;
 import com.ljmu.andre.snaptools.ModulePack.Notifications.SaveNotification.NotificationType;
 import com.ljmu.andre.snaptools.ModulePack.Notifications.StackingDotNotification.StackingOrientation;
@@ -30,10 +29,6 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 	 * Strings
 	 * ===========================================================================
 	 */
-	public static final Preference FILTER_BACKGROUND_SAMPLE_PATH = new Preference(
-			"FILTER_BACKGROUND_SAMPLE_PATH",
-			null, String.class
-	);
 	public static final Preference STORAGE_FORMAT = new Preference(
 			"STORAGE_FORMAT",
 			"SnapType->Username->Snaps", String.class
@@ -47,13 +42,6 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 		}
 	});
 
-	public static final Preference FILTERS_PATH = new Preference(
-			"FILTERS_PATH",
-			null, String.class, new ConditionalCheck() {
-		@DebugLog @NonNull @Override protected Object performConditionCheck(Preference preference, Object preferenceVal) {
-			return getPref(CONTENT_PATH) + "Filters/";
-		}
-	});
 
 	public static final Preference FONTS_PATH = new Preference(
 			"FONT_PATH",
@@ -126,12 +114,7 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 			"STACKED_ORIENTATION",
 			StackingOrientation.HORIZONTAL.getDisplayText(), String.class
 	);
-
-	public static final Preference FILTER_SCALING_TYPE = new Preference(
-			"FILTER_SCALING_TYPE",
-			ScaleType.FIT_CENTER.name(), String.class
-	);
-
+	
 	public static final Preference CURRENT_FONT = new Preference(
 			"CURRENT_FONT",
 			"Default", String.class
@@ -142,11 +125,6 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 			"", String.class
 	);
 
-	public static final Preference STEALTH_SNAP_BUTTON_LOCATION = new Preference(
-			"STEALTH_SNAP_BUTTON_LOCATION",
-			StealthPosition.TOP.name(), String.class
-	);
-
 	// ===========================================================================
 
 	/**
@@ -154,16 +132,6 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 	 * Experimental Feature States
 	 * ===========================================================================
 	 */
-	public static final Preference FORCE_CHEETAH_STATE = new Preference(
-			"FORCE_CHEETAH_STATE",
-			"Default", String.class
-	);// developerOptionCheetahMode
-
-	public static final Preference FORCE_CHEETAH_CHAT_STATE = new Preference(
-			"FORCE_CHEETAH_CHAT_STATE",
-			"Default", String.class
-	); // chat_v10
-	/*true, false*/
 
 	public static final Preference FORCE_INSIGHTS_STATE = new Preference(
 			"FORCE_INSIGHTS_STATE",
@@ -297,20 +265,6 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 			true, Boolean.class
 	);
 
-	public static final Preference LENS_AUTO_ENABLE = new Preference(
-			"LENS_AUTO_ENABLE",
-			false, Boolean.class
-	);
-
-	public static final Preference LENS_MERGE_ENABLE = new Preference(
-			"LENS_MERGE_ENABLE",
-			false, Boolean.class
-	);
-
-	public static final Preference SHOW_LENS_NAMES = new Preference(
-			"SHOW_LENS_NAMES",
-			true, Boolean.class
-	);
 
 	public static final Preference SAVE_CHAT_IN_SC = new Preference(
 			"SAVE_CHAT_IN_SC",
@@ -327,28 +281,8 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 			true, Boolean.class
 	);
 
-	public static final Preference SHOW_SHARING_TUTORIAL = new Preference(
-			"SHOW_SHARING_TUTORIAL",
-			true, Boolean.class
-	);
-
 	public static final Preference LED_INFO_ALREADY_SENT = new Preference(
 			"LED_INFO_ALREADY_SENT",
-			false, Boolean.class
-	);
-
-	public static final Preference FILTER_SHOW_SAMPLE_BACKGROUND = new Preference(
-			"FILTER_SHOW_SAMPLE_BACKGROUND",
-			false, Boolean.class
-	);
-
-	public static final Preference FILTER_NOW_PLAYING_ENABLED = new Preference(
-			"FILTER_NOW_PLAYING_ENABLED",
-			true, Boolean.class
-	);
-
-	public static final Preference FILTER_NOW_PLAYING_HIDE_EMPTY_ART = new Preference(
-			"FILTER_NOW_PLAYING_HIDE_EMPTY_ART",
 			false, Boolean.class
 	);
 
@@ -397,53 +331,8 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 			true, Boolean.class
 	);
 
-	public static final Preference FORCE_CHEETAH = new Preference(
-			"FORCE_CHEETAH",
-			false, Boolean.class
-	);
-
 	public static final Preference BLOCK_TYPING_NOTIFICATIONS = new Preference(
 			"BLOCK_TYPING_NOTIFICATIONS",
-			false, Boolean.class
-	);
-
-	public static final Preference SHOW_CHAT_STEALTH_BUTTON = new Preference(
-			"SHOW_CHAT_STEALTH_BUTTON",
-			true, Boolean.class
-	);
-
-	public static final Preference SHOW_SNAP_STEALTH_BUTTON = new Preference(
-			"SHOW_SNAP_STEALTH_BUTTON",
-			true, Boolean.class
-	);
-
-	public static final Preference SHOW_CHAT_STEALTH_MESSAGE = new Preference(
-			"SHOW_CHAT_STEALTH_MESSAGE",
-			true, Boolean.class
-	);
-
-	public static final Preference SHOW_SNAP_STEALTH_MESSAGE = new Preference(
-			"SHOW_SNAP_STEALTH_MESSAGE",
-			true, Boolean.class
-	);
-
-	public static final Preference DEFAULT_CHAT_STEALTH = new Preference(
-			"DEFAULT_CHAT_STEALTH",
-			false, Boolean.class
-	);
-
-	public static final Preference DEFAULT_SNAP_STEALTH = new Preference(
-			"DEFAULT_SNAP_STEALTH",
-			false, Boolean.class
-	);
-
-	public static final Preference STEALTH_CHAT_BUTTON_LEFT = new Preference(
-			"STEALTH_CHAT_BUTTON_LEFT",
-			true, Boolean.class
-	);
-
-	public static final Preference STEALTH_MARK_STORY_VIEWED = new Preference(
-			"STEALTH_MARK_STORY_VIEWED",
 			false, Boolean.class
 	);
 
@@ -455,38 +344,6 @@ public class ModulePreferenceDef extends ConstantDefiner<Preference> {
 	public static final Preference BATCHED_MEDIA_CAP = new Preference(
 			"BATCHED_MEDIA_CAP",
 			6, Integer.class
-	);
-	public static final Preference CURRENT_NOW_PLAYING_VIEW = new Preference(
-			"CURRENT_NOW_PLAYING_VIEW",
-			0, Integer.class
-	);
-	public static final Preference NOW_PLAYING_BOTTOM_MARGIN = new Preference(
-			"NOW_PLAYING_BOTTOM_MARGIN",
-			100, Integer.class
-	);
-	public static final Preference NOW_PLAYING_IMAGE_SIZE = new Preference(
-			"NOW_PLAYING_IMAGE_SIZE",
-			200, Integer.class
-	);
-	public static final Preference STEALTH_CHAT_BUTTON_ALPHA = new Preference(
-			"STEALTH_CHAT_BUTTON_ALPHA",
-			100, Integer.class
-	);
-	public static final Preference STEALTH_CHAT_BUTTON_PADDING = new Preference(
-			"STEALTH_CHAT_BUTTON_PADDING",
-			10, Integer.class
-	);
-	public static final Preference STEALTH_SNAP_BUTTON_ALPHA = new Preference(
-			"STEALTH_SNAP_BUTTON_ALPHA",
-			100, Integer.class
-	);
-	public static final Preference STEALTH_SNAP_BUTTON_MARGIN = new Preference(
-			"STEALTH_SNAP_BUTTON_MARGIN",
-			10, Integer.class
-	);
-	public static final Preference STEALTH_SNAP_BUTTON_SIZE = new Preference(
-			"STEALTH_SNAP_BUTTON_SIZE",
-			50, Integer.class
 	);
 
 	/**
