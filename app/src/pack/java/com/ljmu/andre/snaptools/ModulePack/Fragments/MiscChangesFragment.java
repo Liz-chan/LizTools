@@ -45,7 +45,6 @@ public class MiscChangesFragment extends FragmentHelper {
 	// ===========================================================================
 	private ViewGroup mainContainer;
 	private ViewGroup generalContainer;
-	private ViewGroup experimentsContainer;
 
 	private Spinner fontSpinner;
 	// ===========================================================================
@@ -54,7 +53,6 @@ public class MiscChangesFragment extends FragmentHelper {
 		viewProvider = new MiscChangesViewProvider(
 				getActivity(),
 				viewGroup -> generalContainer = viewGroup,
-				viewGroup -> experimentsContainer = viewGroup,
 				this::handleEvent
 		);
 
