@@ -53,7 +53,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable SENT_MEDIA_TIMESTAMP = new HookVariable(
 			"SENT_MEDIA_TIMESTAMP",
-			"bt"
+			"bE"
 
 			/** CLASS: rbi ==============================================================*/
 			// CODE CHUNK ================================================================
@@ -66,7 +66,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable SENT_MEDIA_BITMAP = new HookVariable(
 			"SENT_MEDIA_BITMAP",
-			"ay"
+			"aF"
 
 			/** CLASS: {@link HookClassDef.SENT_SNAP_BASE} ===========================*/
 			// CODE CHUNK ================================================================
@@ -82,7 +82,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable SENT_MEDIA_VIDEO_URI = new HookVariable(
 			"SENT_MEDIA_VIDEO_URI",
-			"aG"
+			"aO"
 
 			/** CLASS: Parent Of: {@link HookClassDef.SENT_SNAP_BASE} ==================*/
 			// CODE CHUNK ================================================================
@@ -110,7 +110,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable SENT_MEDIA_BATCH_DATA = new HookVariable(
 			"SENT_MEDIA_BATCH_DATA",
-			"bP"
+			"cf"
 
 			/** CLASS: Interface Of: {@link HookClassDef.SENT_BATCHED_VIDEO} =============*/
 			/** FOUND IN: {@link HookClassDef.SENT_VIDEO} ================================*/
@@ -191,7 +191,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable CHAT_SAVING_LINKER = new HookVariable(
 			"CHAT_SAVING_LINKER",
-			"N"
+			"x"
 
 			/** CLASS: {@link HookClassDef.CHAT_MESSAGE_VIEW_HOLDER}======================*/
 			// CODE CHUNK ================================================================
@@ -231,7 +231,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable BATCHED_MEDIA_LIST = new HookVariable(
 			"BATCHED_MEDIA_LIST",
-			"aB"
+			"aL"
 
 			/** CLASS: {@link HookClassDef.SENT_VIDEO} ===================================*/
 	); 
@@ -264,19 +264,6 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	// ===========================================================================
 
-	public static final HookVariable RECEIVED_SNAP_PAYLOAD_HOLDER = new HookVariable(
-			"RECEIVED_SNAP_PAYLOAD_HOLDER",
-			"b"
-
-			/** CLASS: {@link HookClassDef.RECEIVED_SNAP_PAYLOAD_BUILDER} ================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * public final rnw getRequestPayload() {
-			 *      this.d = new HashMap(this.b.b());
-			 *                               ^^^
-			 */
-	); 
-
 	// ===========================================================================
 
 	public static final HookVariable RECEIVED_SNAP_PAYLOAD_MAP = new HookVariable(
@@ -291,17 +278,6 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 	); 
 
 	// ===========================================================================
-
-	public static final HookVariable STORY_UPDATE_METADATA_LIST = new HookVariable(
-			"STORY_UPDATE_METADATA_LIST",
-			"b"
-
-			/** CLASS: {@link HookClassDef.STORY_SNAP_PAYLOAD_BUILDER} ===================*/
-			// CODE CHUNK ================================================================
-			/**
-			 * private final List<qtg> b;
-			 */
-	); 
 
 	// ===========================================================================
 
@@ -364,7 +340,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable STORY_COLLECTION_MAP = new HookVariable(
 			"STORY_COLLECTION_MAP",
-			"d"
+			"c"
 
 			/** CLASS: {@link HookClassDef.STORY_MANAGER}=================================*/
 			// CODE CHUNK ================================================================
