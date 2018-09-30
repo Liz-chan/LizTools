@@ -141,7 +141,7 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	); // dud 
 	public static final HookClass STORY_SNAP_AD_LOADER = new HookClass(
 			"STORY_SNAP_AD_LOADER",
-			"zrh"
+			"zwf"
 	); // dlv 
 	public static final HookClass FRIEND_PROFILE_POPUP_FRAGMENT = new HookClass(
 			"FRIEND_PROFILE_POPUP_FRAGMENT",
@@ -210,14 +210,7 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	public static final HookClass CHAT_V10_BUILDER = new HookClass(
 			"CHAT_V10_BUILDER",
 			"ahvq"
-	); // kdd 
-	public static final HookClass AB_TEST_MANAGER = new HookClass(
-			"AB_TEST_MANAGER",
-			"jul"
-	); // dgr 
-	public static final HookClass EXPERIMENT_BASE = new HookClass(
-			"EXPERIMENT_BASE",
-			"apqt"
+	); // kdd
 	public static final HookClass STORY_MANAGER = new HookClass(
 			"STORY_MANAGER",
 			"aadm"
