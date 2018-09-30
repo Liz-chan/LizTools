@@ -102,7 +102,7 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook GROUP_GET_ALGORITHM = new Hook(
 			"GROUP_GET_ALGORITHM",
-			GROUP_SNAP_METADATA, "d", "mpi"
+			GROUP_SNAP_METADATA, "a", "aisw"
 	);
 	public static final Hook SENT_SNAP = new Hook(
 			"SENT_SNAP",
@@ -146,11 +146,11 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook LOAD_STORY_SNAP_ADVERT = new Hook(
 			"LOAD_STORY_SNAP_ADVERT",
-			STORY_SNAP_AD_LOADER, "a", "ehu", "wdv"
+			STORY_SNAP_AD_LOADER, "a", "zwf", "eyr"
 	);
 	public static final Hook FRIEND_STORY_TILE_USERNAME = new Hook(
 			"FRIEND_STORY_TILE_USERNAME",
-			STORY_FRIEND_VIEWED, "F_"
+			STORY_FRIEND_VIEWED, "a"
 	);
 	public static final Hook FRIEND_PROFILE_POPUP_CREATED = new Hook(
 			"FRIEND_PROFILE_POPUP_CREATED",
@@ -162,7 +162,7 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook LOAD_NEW_STORY = new Hook(
 			"LOAD_NEW_STORY",
-			STORY_MANAGER, "a", "qsj"
+			STORY_MANAGER, "a", "anju"
 	);
 	// ===========================================================================
 
@@ -183,24 +183,24 @@ public class HookDef extends ConstantDefiner<Hook> {
 	public static final Hook CHAT_METADATA_WRITE_SECOND = new Hook(
 			"CHAT_METADATA_WRITE_SECOND",
 			CHAT_METADATA_JSON_PARSER_SECOND, "a", "com.google.gson.stream.JsonWriter",
-			"wxw"
+			"auvf"
 	);
 	public static final Hook CHAT_MESSAGE_VIEW_MEASURE = new Hook(
 			"CHAT_MESSAGE_VIEW_MEASURE",
-			CHAT_MESSAGE_VIEW_HOLDER, "T"
+			CHAT_MESSAGE_VIEW_HOLDER, "F"
 	);
 	public static final Hook CHAT_ISSAVED_INAPP = new Hook(
 			"CHAT_ISSAVED_INAPP",
-			null, "dx_"
+			null, "eq_"
 			/** FOUND IN -> abstract class mlk*/
 	);
 	public static final Hook CHAT_SAVE_INAPP = new Hook(
 			"CHAT_SAVE_INAPP",
-			CHAT_MESSAGE_VIEW_HOLDER, "N"
+			CHAT_MESSAGE_VIEW_HOLDER, "x"
 	);
 	public static final Hook CHAT_NOTIFICATION = new Hook(
 			"CHAT_NOTIFICATION",
-			CHAT_NOTIFICATION_CREATOR, "a", "sof", "sny"
+			CHAT_NOTIFICATION_CREATOR, "a", "apgz", "apgs"
 	);
 
 	// SCREENSHOT BYPASS =========================================================
@@ -233,39 +233,9 @@ public class HookDef extends ConstantDefiner<Hook> {
 			"CAPTION_CREATE_HOOK",
 			CAPTION_MANAGER_CLASS, "onCreateActionMode", ActionMode.class, Menu.class
 	);
-	//public static final Hook CHEETAH_DEFINE_MODE = new Hook(
-			//"CHEETAH_DEFINE_MODE",
-			//CHEETAH_ALLOCATOR, "j"
-	);
-	public static final Hook EXPERIMENT_PUSH_STATE = new Hook(
-			"EXPERIMENT_PUSH_STATE",
-			EXPERIMENT_BASE, "b"
-	);
 
 	// ===========================================================================
 	// ===========================================================================
-
-	// FORCED HOOKS ==============================================================
-	public static final Hook AB_TEST_CHECK_STRING = new Hook(
-			"AB_TEST_CHECK_VALUE",
-			AB_TEST_MANAGER, "a", String.class, String.class, String.class
-	);
-	public static final Hook AB_TEST_CHECK_INT = new Hook(
-			"AB_TEST_CHECK_INT",
-			AB_TEST_MANAGER, "a", String.class, String.class, int.class
-	);
-	public static final Hook AB_TEST_CHECK_LONG = new Hook(
-			"AB_TEST_CHECK_LONG",
-			AB_TEST_MANAGER, "a", String.class, String.class, long.class
-	);
-	public static final Hook AB_TEST_CHECK_BOOLEAN = new Hook(
-			"AB_TEST_CHECK_BOOLEAN",
-			AB_TEST_MANAGER, "a", String.class, String.class, boolean.class
-	);
-	public static final Hook AB_TEST_CHECK_FLOAT = new Hook(
-			"AB_TEST_CHECK_FLOAT",
-			AB_TEST_MANAGER, "a", String.class, String.class, float.class
-	);
 
 	// ===========================================================================
 
@@ -278,15 +248,15 @@ public class HookDef extends ConstantDefiner<Hook> {
 
 	public static final Hook SNAP_GET_USERNAME = new Hook(
 			"SNAP_GET_USERNAME",
-			RECEIVED_SNAP, "dC_"
+			RECEIVED_SNAP, "s"
 	);
 	public static final Hook SNAP_GET_TIMESTAMP = new Hook(
 			"SNAP_GET_TIMESTAMP",
-			STORY_SNAP, "l"
+			STORY_SNAP, "aF_"
 	);
 	public static final Hook SNAP_GET_MEDIA_TYPE = new Hook(
 			"SNAP_GET_MEDIA_TYPE",
-			SNAP_BASE, "i"
+			SNAP_BASE, "bb_"
 	);
 	public static final Hook STORY_METADATA_GET_OBJECT = new Hook(
 			"STORY_METADATA_GET_OBJECT",
@@ -294,11 +264,11 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook STORY_METADATA_BUILDER = new Hook(
 			"STORY_METADATA_BUILDER",
-			STORY_METADATA_LOADER, "a", STORY_SNAP.getStrClass(), "ssf", "sse", "qsz"
+			STORY_METADATA_LOADER, "a", STORY_SNAP.getStrClass(), "apkx", "apkw", "ankk"
 	);
 	public static final Hook STORY_DISPLAYED = new Hook(
 			"STORY_DISPLAYED",
-			STORY_ADVANCER, "E"
+			STORY_ADVANCER, "F"
 	);
 	public static final Hook OPENED_SNAP = new Hook(
 			"OPENED_SNAP",
@@ -314,7 +284,7 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook GET_USERNAME = new Hook(
 			"GET_USERNAME",
-			USER_PREFS, "L"
+			USER_PREFS, "N"
 	);
 
 	// CONSTRUCTORS ==============================================================
