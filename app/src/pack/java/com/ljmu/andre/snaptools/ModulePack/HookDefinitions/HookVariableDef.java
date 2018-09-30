@@ -19,7 +19,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 return (int) (this.az * 1000.0d);
 			 ^^^^^^^^
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -33,7 +33,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 this.f = bub.NONE;
 			 ^^^^^^
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -47,7 +47,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 "isZipped", this.ax
 			 ^^^^^^^
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -60,7 +60,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 *	public long bt = -1;
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -76,7 +76,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 *	this.ay = null;
 			 *	this.J = qjw.RECYCLE;
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -91,7 +91,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 *
 			 * ALSO: return this.aG == null ? null : this.aG.getPath();
 			 */
-	); 
+	);
 
 	public static final HookVariable SENT_BATCHED_VIDEO_MEDIAHOLDER = new HookVariable(
 			"SENT_BATCHED_VIDEO_MEDIAHOLDER",
@@ -104,7 +104,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 * "Original video has no Magikarp playback metadata", this.c.bd
 			 *                                                      ^^^^^
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -118,7 +118,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 * private rba bG;
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -134,14 +134,14 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 throw new IllegalStateException("Chat media is null before playing");
 			 }
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
 	public static final HookVariable NO_AUTO_ADVANCE = new HookVariable(
 			"NO_AUTO_ADVANCE",
 			"NO_AUTO_ADVANCE"
-	); 
+	);
 
 	// ===========================================================================
 
@@ -157,7 +157,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 private final SnapCaptionView b;
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -171,7 +171,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 (this.d && a.markSupported())
 			 ^^^^^^
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -185,13 +185,13 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 this.d.a("OPEN_VIEW_DISPLAYED", this.c, cez.a("page_view_id", this.p, buv.u, Long.valueOf(tkp.c())));
 			 -----------------------------^^^^^^^^^^^
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
 	public static final HookVariable CHAT_SAVING_LINKER = new HookVariable(
 			"CHAT_SAVING_LINKER",
-			"x"
+			"B"
 
 			/** CLASS: {@link HookClassDef.CHAT_MESSAGE_VIEW_HOLDER}======================*/
 			// CODE CHUNK ================================================================
@@ -209,7 +209,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 * }
 
 			 **/
-	); 
+	);
 
 	// ===========================================================================
 
@@ -225,7 +225,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 public mnl e;
 			 public boolean f;
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -234,7 +234,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			"aL"
 
 			/** CLASS: {@link HookClassDef.SENT_VIDEO} ===================================*/
-	); 
+	);
 
 	// ===========================================================================
 
@@ -243,7 +243,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			"b"
 
 			/** CLASS: qkn ===============================================================*/
-	); 
+	);
 
 	// ===========================================================================
 
@@ -260,7 +260,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 * this.a = sob.a(bundle.getString("type"));
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -275,7 +275,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 * final Map<String, rbl> a;
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -290,7 +290,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 * public final xig a = new xig();
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -304,7 +304,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 * @SerializedName("id")
 			 * protected String a;
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -332,7 +332,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 * this.o = ((ViewStub) this.b.e_(R.id.top_panel_stub)).inflate();
 			 */
-	); 
+	);
 
 	// ===========================================================================
 
@@ -348,9 +348,44 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 * protected final Map<String, qsj> d = new ConcurrentHashMap();
 			 * qsj -> Search for "StoryCollection"
 			 */
-	); 
+	);
 
 	// ===========================================================================
+
+	public static final HookVariable GEOFILTER_VIEW_CREATION_ARG3 = new HookVariable(
+			"GEOFILTER_VIEW_CREATION_ARG3",
+			"a"
+
+			/** CLASS: {@link HookClassDef.FILTER_METADATA_LOADER} =======================*/
+			// CODE CHUNK ================================================================
+			/**
+			 * arrayList.add(ghb.a(a, context, this.a));
+			 *                                 ^^^^^^
+			 */
+	); // TODO: DONE
+	public static final HookVariable FILTER_METADATA_CACHE = new HookVariable(
+			"FILTER_METADATA_CACHE",
+			"a"
+
+			/** CLASS: {@link HookClassDef.FILTER_METADATA_CREATOR}=======================*/
+			// CODE CHUNK ================================================================
+			/**
+			 * private /* synthetic / qvs a;
+			 */
+	); // TODO: DONE
+	public static final HookVariable FILTER_SERIALIZABLE_METADATA = new HookVariable(
+			"FILTER_SERIALIZABLE_METADATA",
+			"a"
+
+			/** CLASS: qvs ===============================================================*/
+			// CODE CHUNK ================================================================
+			/**
+			 * qvs -> Search for "EncryptedGeoLoggingData is null: server returned empty response for"
+			 *
+			 * public final wsa a;
+			 * wsa -> {@link HookClassDef.SERIALIZABLE_FILTER_METADATA}
+			 */
+	); // TODO: DONE
 
 	// ===========================================================================
 
@@ -372,7 +407,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			/**
 			 * Find function that returns variable: ", isSubscribed=" + this.s
 			 */
-	); 
+	);
 	// ===========================================================================
 
 
