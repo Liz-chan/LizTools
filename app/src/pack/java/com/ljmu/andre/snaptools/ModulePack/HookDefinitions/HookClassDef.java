@@ -197,7 +197,7 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	); // ult
 	public static final HookClass CHAT_HEADER_METADATA = new HookClass(
 			"CHAT_HEADER_METADATA",
-			"wso"
+			"auqf"
 	); // usz
 	public static final HookClass CHAT_BODY_METADATA = new HookClass(
 			"CHAT_BODY_METADATA",
@@ -247,7 +247,7 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 			"DOWNLOADER_RUNNABLE",
 			"apeh$2"
 	);
-	public static final HookClass GEOFILTER_VIEW = new HookClass(
+	/*public static final HookClass GEOFILTER_VIEW = new HookClass(
 			"GEOFILTER_VIEW",
 			"com.snapchat.android.app.shared.feature.preview.ui.smartfilters.geofilterview.GeofilterViewV2"
 	); // com.snapchat.android.app.shared.feature.preview.ui.smartfilters.GeofilterView // TODO: DONE
@@ -265,8 +265,8 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	); // usn // TODO: DONE
 	public static final HookClass FILTER_METADATA_LOADER = new HookClass(
 			"FILTER_METADATA_LOADER",
-			"amrc"
-	); // fek // TODO: DONE
+			"GeoFilterViewV2"
+	); // fek // FIXME private GeofilterViewV2(Context context, anlt anlt, dyl<anmb> dyl_anmb, angz angz, aoxc aoxc, anbn anbn) {
 	public static final HookClass FILTER_METADATA_CREATOR = new HookClass(
 			"FILTER_METADATA_CREATOR",
 			"annh$2"
@@ -274,7 +274,39 @@ public class HookClassDef extends ConstantDefiner<HookClass> {
 	public static final HookClass GEOFILTER_VIEW_CREATOR = new HookClass(
 			"GEOFILTER_VIEW_CREATOR",
 			"anbn"
-	); // fdr // TODO: DONE
+	); // fdr // TODO: FIX*/
+	public static final HookClass RECEIVED_SNAP_PAYLOAD_BUILDER = new HookClass(
+            "RECEIVED_SNAP_PAYLOAD_BUILDER",
+            "zly"
+    ); // dfy // TODO: DONE
+    public static final HookClass STORY_SNAP_PAYLOAD_BUILDER = new HookClass(
+            "STORY_SNAP_PAYLOAD_BUILDER",
+            "zxm"
+    ); // dnj // TODO: DONE
+	public static final HookClass STORY_STATUS_UPDATER = new HookClass(
+            "STORY_STATUS_UPDATER",
+            "zyc"
+    ); // dnu // TODO: DONE
+	public static final HookClass NETWORK_MANAGER = new HookClass(
+            "NETWORK_MANAGER",
+            "apbv"
+    ); // qlc // TODO: DONE
+    public static final HookClass NETWORK_DISPATCHER = new HookClass(
+            "NETWORK_DISPATCHER",
+            "ahql"
+    ); // jyp // TODO: DONE
+	public static final HookClass CHAT_GROUP_VIEW_MARKER = new HookClass(
+            "CHAT_GROUP_VIEW_MARKER",
+            "ahsh"
+    ); // kal // TODO: DONE
+    public static final HookClass CHAT_DIRECT_VIEW_MARKER = new HookClass(
+            "CHAT_DIRECT_VIEW_MARKER",
+            "ahrf"
+    ); // jzh // TODO: DONE
+	public static final HookClass CHEETAH_PROFILE_SETTINGS_CREATOR = new HookClass(
+            "CHEETAH_PROFILE_SETTINGS_CREATOR",
+            "aeiu"
+    ); // hgr // TODO: DONE
 
 	public static class HookClass extends Constant {
 		private String strClass;

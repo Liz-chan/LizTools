@@ -88,7 +88,7 @@ public class HookDef extends ConstantDefiner<Hook> {
 	);
 	public static final Hook BATCHED_MEDIA_LIMITER = new Hook(
 			"BATCHED_MEDIA_LIMITER",
-			SENT_VIDEO, "aU"
+			SENT_VIDEO, "aV"
 	);
 	public static final Hook CAMERA_IS_VISIBLE = new Hook(
 			"CAMERA_IS_VISIBLE",
@@ -264,31 +264,84 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
 
     // CUSTOM FILTERS ============================================================
-    public static final Hook GEOFILTER_SHOULD_SUBSAMPLE = new Hook(
+    /*public static final Hook GEOFILTER_SHOULD_SUBSAMPLE = new Hook(
             "GEOFILTER_SHOULD_SUBSAMPLE",
             IMAGE_GEOFILTER_VIEW, "a", boolean.class
     ); // TODO: DONE
     public static final Hook FILTER_LOAD_METADATA = new Hook(
             "FILTER_LOAD_METADATA",
-            FILTER_METADATA_LOADER, "a", List.class, Context.class
-    ); // TODO: DONE
+            FILTER_METADATA_LOADER, null, Context.class, "anlt", "dyl", "angz", "aoxc", "anbn"
+    ); // TODO: Fix
     public static final Hook CREATE_FILTER_METADATA = new Hook(
             "CREATE_FILTER_METADATA",
             FILTER_METADATA_CREATOR, "e"
     ); // TODO: DONE
     public static final Hook GET_GEOFILTER_CONTENT_VIEW = new Hook(
             "GET_GEOFILTER_CONTENT_VIEW",
-            GEOFILTER_VIEW, "c"
+            GEOFILTER_VIEW, "e"
     ); // TODO: DONE
     public static final Hook CREATE_GEOFILTER_VIEW = new Hook(
             "CREATE_GEOFILTER_VIEW",
             GEOFILTER_VIEW_CREATOR, "a", FILTER_METADATA.getStrClass(), Context.class, "bee"
-    ); // TODO: DONE
+    ); // TODO: Fix
     public static final Hook GEOFILTER_TAPPED = new Hook(
             "GEOFILTER_TAPPED",
             IMAGE_GEOFILTER_VIEW, "a", MotionEvent.class
-    ); // TODO: DONE
+    ); // TODO: DONE*/
     // ===========================================================================
+	// STEALTH VIEWING ===========================================================
+    public static final Hook GET_SNAP_ID = new Hook(
+            "GET_SNAP_ID",
+            SNAP_BASE, "g"
+    ); // TODO: DONE
+    public static final Hook SET_SNAP_STATUS = new Hook(
+            "SET_SNAP_STATUS",
+            SNAP_BASE, "a", SNAP_STATUS.getStrClass()
+    ); // TODO: DONE
+    public static final Hook MARK_STORY_VIEWED = new Hook(
+            "MARK_STORY_VIEWED",
+            STORY_STATUS_UPDATER, "a", "anju", STORY_SNAP.getStrClass(), boolean.class
+    ); // TODO: DONE
+    public static final Hook GET_RECEIVED_SNAP_PAYLOAD = new Hook(
+            "GET_RECEIVED_SNAP_PAYLOAD",
+            RECEIVED_SNAP_PAYLOAD_BUILDER, "getRequestPayload"
+    ); // TODO: DONE
+    public static final Hook GET_STORY_SNAP_PAYLOAD = new Hook(
+            "GET_STORY_SNAP_PAYLOAD",
+            STORY_SNAP_PAYLOAD_BUILDER, "getRequestPayload"
+    ); // TODO: DONE
+    public static final Hook NETWORK_EXECUTE_SYNC = new Hook(
+            "NETWORK_EXECUTE_SYNC",
+            NETWORK_MANAGER, "executeSynchronously"
+    ); // TODO: DONE
+    public static final Hook DISPATCH_CHAT_UPDATE = new Hook(
+            "DISPATCH_CHAT_UPDATE",
+            NETWORK_DISPATCHER, "a", "aiqy", "aukc", boolean.class, "aivj"
+    ); // TODO: DONE
+    //	public static final Hook MARK_CHAT_VIEWED = new Hook(
+//			MARK_CHAT_VIEWED",
+//			CHAT_MESSAGE_METADATA, "b", long.class
+//	);
+    public static final Hook MARK_GROUP_CHAT_VIEWED = new Hook(
+            "MARK_GROUP_CHAT_VIEWED",
+            CHAT_GROUP_VIEW_MARKER, "a", "aiqy", String.class
+    ); // TODO: DONE
+    public static final Hook MARK_DIRECT_CHAT_VIEWED_PRESENT = new Hook(
+            "MARK_DIRECT_CHAT_VIEWED_PRESENT",
+            CHAT_DIRECT_VIEW_MARKER, "a", "aipd", "apzn"
+    ); // TODO: DONE
+    public static final Hook MARK_DIRECT_CHAT_VIEWED_UNPRESENT = new Hook(
+            "MARK_DIRECT_CHAT_VIEWED_UNPRESENT",
+            CHAT_DIRECT_VIEW_MARKER, "b", "apzn", "aipd"
+    ); // TODO: DONE
+    //	public static final Hook CHAT_V3_FRAGMENT_CREATED = new Hook(
+//			"CHAT_V3_FRAGMENT_CREATED",
+//			CHAT_V3_FRAGMENT, "onCreateView", LayoutInflater.class, ViewGroup.class, Bundle.class
+//	);
+    public static final Hook CREATE_CHEETAH_PROFILE_SETTINGS_VIEW = new Hook(
+            "CREATE_CHEETAH_PROFILE_SETTINGS_VIEW",
+            CHEETAH_PROFILE_SETTINGS_CREATOR, null, View.class
+    ); // TODO: DONE
 
     // CONSTRUCTORS ==============================================================
 

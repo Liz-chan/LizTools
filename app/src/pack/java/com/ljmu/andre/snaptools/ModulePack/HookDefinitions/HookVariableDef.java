@@ -240,7 +240,7 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	public static final HookVariable BATCHED_MEDIA_ITEM_BOOLEAN = new HookVariable(
 			"BATCHED_MEDIA_ITEM_BOOLEAN",
-			"b"
+			"e"
 
 			/** CLASS: qkn ===============================================================*/
 	);
@@ -352,9 +352,9 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 
 	// ===========================================================================
 
-	public static final HookVariable GEOFILTER_VIEW_CREATION_ARG3 = new HookVariable(
+	/*public static final HookVariable GEOFILTER_VIEW_CREATION_ARG3 = new HookVariable(
 			"GEOFILTER_VIEW_CREATION_ARG3",
-			"a"
+			"c"
 
 			/** CLASS: {@link HookClassDef.FILTER_METADATA_LOADER} =======================*/
 			// CODE CHUNK ================================================================
@@ -362,20 +362,20 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 * arrayList.add(ghb.a(a, context, this.a));
 			 *                                 ^^^^^^
 			 */
-	); // TODO: DONE
-	public static final HookVariable FILTER_METADATA_CACHE = new HookVariable(
-			"FILTER_METADATA_CACHE",
-			"a"
+	//); // TODO: Fix
+	//public static final HookVariable FILTER_METADATA_CACHE = new HookVariable(
+	//		"FILTER_METADATA_CACHE",
+	//		"a"
 
 			/** CLASS: {@link HookClassDef.FILTER_METADATA_CREATOR}=======================*/
 			// CODE CHUNK ================================================================
 			/**
 			 * private /* synthetic / qvs a;
 			 */
-	); // TODO: DONE
-	public static final HookVariable FILTER_SERIALIZABLE_METADATA = new HookVariable(
-			"FILTER_SERIALIZABLE_METADATA",
-			"a"
+	//); // TODO: DONE
+	//public static final HookVariable FILTER_SERIALIZABLE_METADATA = new HookVariable(
+	//		"FILTER_SERIALIZABLE_METADATA",
+	//		"a"
 
 			/** CLASS: qvs ===============================================================*/
 			// CODE CHUNK ================================================================
@@ -385,7 +385,9 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 * public final wsa a;
 			 * wsa -> {@link HookClassDef.SERIALIZABLE_FILTER_METADATA}
 			 */
-	); // TODO: DONE
+	//); // TODO: DONE
+
+
 
 	// ===========================================================================
 
@@ -408,6 +410,28 @@ public class HookVariableDef extends ConstantDefiner<HookVariable> {
 			 * Find function that returns variable: ", isSubscribed=" + this.s
 			 */
 	);
+	public static final HookVariable RECEIVED_SNAP_PAYLOAD_HOLDER = new HookVariable(
+			"RECEIVED_SNAP_PAYLOAD_HOLDER",
+			"b"
+
+			/** CLASS: {@link HookClassDef.RECEIVED_SNAP_PAYLOAD_BUILDER} ================*/
+			// CODE CHUNK ================================================================
+			/**
+			 * public final rnw getRequestPayload() {
+			 *      this.d = new HashMap(this.b.b());
+			 *                               ^^^
+			 */
+	); // TODO: DONE
+	public static final HookVariable STORY_UPDATE_METADATA_LIST = new HookVariable(
+			"STORY_UPDATE_METADATA_LIST",
+			"b"
+
+			/** CLASS: {@link HookClassDef.STORY_SNAP_PAYLOAD_BUILDER} ===================*/
+			// CODE CHUNK ================================================================
+			/**
+			 * private final List<qtg> b;
+			 */
+	); // TODO: DONE
 	// ===========================================================================
 
 
