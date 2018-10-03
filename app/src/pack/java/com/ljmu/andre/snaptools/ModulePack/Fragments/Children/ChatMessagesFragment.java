@@ -56,7 +56,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Callable;
 
-import hugo.weaving.DebugLog;
+
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
@@ -65,6 +65,7 @@ import timber.log.Timber;
 
 import static com.ljmu.andre.snaptools.Utils.ResourceUtils.getColor;
 import static com.ljmu.andre.snaptools.Utils.ResourceUtils.getLayout;
+import static com.ljmu.andre.snaptools.Utils.StringEncryptor.decryptMsg;
 
 /**
  * This class was created by Andre R M (SID: 701439)
@@ -250,7 +251,7 @@ public class ChatMessagesFragment extends FragmentHelper {
 		colours.recycle();
 	}
 
-	@DebugLog private int getIndexForMessage(String messageRegex) {
+	private int getIndexForMessage(String messageRegex) {
 		int index = -1;
 		synchronized (MESSAGE_LOCK) {
 			for (MessageItem conversationItem : messages) {
@@ -388,8 +389,8 @@ public class ChatMessagesFragment extends FragmentHelper {
 	private void deleteMessage(ChatObject chatObject) {
 		DialogFactory.createConfirmation(
 				getActivity(),
-				"Delete Message?",
-				"Are you sure you want to delete this message?"
+				/*Delete Message?*/ decryptMsg(new byte[]{-6, 26, 55, 2, 38, -46, 70, 21, 112, -72, 31, 30, -73, 100, -15, -114}),
+				/*Are you sure you want to delete this message?*/ decryptMsg(new byte[]{124, -63, 53, -11, 86, -30, -46, 37, -98, -41, 23, -17, -27, 80, 93, -10, -83, 49, -22, -39, 44, 11, -48, 15, 71, 55, -29, -28, 84, -33, 102, 88, -104, 77, -99, -7, -86, 31, -3, 24, -14, -65, 49, -67, 123, 98, -22, 42})
 						+ "\n\n\"" + chatObject.text + "\"",
 				new ThemedClickListener() {
 					@Override public void clicked(ThemedDialog themedDialog) {

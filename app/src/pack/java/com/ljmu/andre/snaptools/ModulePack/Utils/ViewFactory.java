@@ -49,7 +49,7 @@ import com.ljmu.andre.snaptools.R;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import hugo.weaving.DebugLog;
+
 import timber.log.Timber;
 
 import static android.os.Build.VERSION.SDK_INT;
@@ -179,7 +179,7 @@ public class ViewFactory {
 	 * @param context Context to get resources and device specific display metrics
 	 * @return A int value to represent sp equivalent to px value
 	 */
-	@DebugLog public static int sp(float px, Context context) {
+	public static int sp(float px, Context context) {
 		Resources resources = context.getResources();
 		DisplayMetrics metrics = resources.getDisplayMetrics();
 		return (int) Math.ceil(px * metrics.scaledDensity);

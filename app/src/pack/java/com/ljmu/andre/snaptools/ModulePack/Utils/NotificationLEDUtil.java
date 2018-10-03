@@ -2,6 +2,8 @@ package com.ljmu.andre.snaptools.ModulePack.Utils;
 
 import android.os.Build;
 
+//import com.crashlytics.android.answers.Answers;
+//import com.crashlytics.android.answers.CustomEvent;
 import com.ljmu.andre.snaptools.Utils.ShellUtils;
 
 import java.io.BufferedReader;
@@ -10,18 +12,18 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
+//import io.fabric.sdk.android.Fabric;
 import timber.log.Timber;
 
 import static com.ljmu.andre.GsonPreferences.Preferences.getPref;
+import static com.ljmu.andre.GsonPreferences.Preferences.putPref;
 import static com.ljmu.andre.snaptools.ModulePack.Utils.ModulePreferenceDef.LED_INFO_ALREADY_SENT;
 
 /**
- * ===========================================================================
- * Source Code/Implementation created by Ethan (ElectronicWizard)
- *
- * @see <a href="https://github.com/ElectronicWizard">Ethan's Github</a>
- * ===========================================================================
+ * Created by ethan on 10/5/2017.
  */
+
+
 public class NotificationLEDUtil {
 	private static ArrayList<NotificationColor> queue = new ArrayList<>();
 	private static Boolean currentlyLit = false;
@@ -100,7 +102,7 @@ public class NotificationLEDUtil {
 		} else if (m.equalsIgnoreCase("OnePlus")) {
 			return ManufacturerLEDPath.GENERIC;
 		} else {
-			if (!(Boolean) getPref(LED_INFO_ALREADY_SENT)) {
+//			if (!(Boolean) getPref(LED_INFO_ALREADY_SENT)) {
 //				try {
 //					if (Fabric.isInitialized()) {
 //						CustomEvent unknownLedEvent = new CustomEvent("UnknownLEDManufacturer");
@@ -113,7 +115,7 @@ public class NotificationLEDUtil {
 //				} catch (Throwable t) {
 //					Timber.w(t, "Issue sending Answers Event");
 //				}
-			}
+//			}
 
 			return ManufacturerLEDPath.GENERIC;
 		}

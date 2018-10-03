@@ -44,20 +44,13 @@ public class MiscChangesFragment extends FragmentHelper {
 
 	// ===========================================================================
 	private ViewGroup mainContainer;
-	private ViewGroup generalContainer;
-
 	private Spinner fontSpinner;
 	// ===========================================================================
 
 	@Nullable @Override public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-		viewProvider = new MiscChangesViewProvider(
-				getActivity(),
-				viewGroup -> generalContainer = viewGroup,
-				this::handleEvent
-		);
-
+		viewProvider = new MiscChangesViewProvider(getActivity(), this::handleEvent);
 		mainContainer = viewProvider.getMainContainer();
-		fontSpinner = getDSLView(generalContainer, "font_selector_spinner");
+		fontSpinner = getDSLView(mainContainer, "font_selector_spinner");
 
 		return mainContainer;
 	}
