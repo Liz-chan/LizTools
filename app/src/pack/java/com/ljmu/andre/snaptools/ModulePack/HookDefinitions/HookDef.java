@@ -69,7 +69,7 @@ public class HookDef extends ConstantDefiner<Hook> {
     );
     public static final Hook SENT_BATCHED_SNAP = new Hook(
             "SENT_BATCHED_SNAP",
-            SENT_BATCHED_VIDEO, "a", "ansq$b"
+            SENT_BATCHED_VIDEO, "d"
     );
     public static final Hook CONSTRUCTOR_OPERA_PAGE_VIEW = new Hook(
             "CONSTRUCTOR_OPERA_PAGE_VIEW",
@@ -342,6 +342,29 @@ public class HookDef extends ConstantDefiner<Hook> {
             "CREATE_CHEETAH_PROFILE_SETTINGS_VIEW",
             CHEETAH_PROFILE_SETTINGS_CREATOR, null, View.class
     ); // TODO: DONE
+
+    // FORCED HOOKS ==============================================================
+    public static final Hook AB_TEST_CHECK_STRING = new Hook(
+            "AB_TEST_CHECK_VALUE",
+            AB_TEST_MANAGER, "a", String.class, String.class, String.class
+    ); // TODO: DONE
+    public static final Hook AB_TEST_CHECK_INT = new Hook(
+            "AB_TEST_CHECK_INT",
+            AB_TEST_MANAGER, "a", String.class, String.class, int.class
+    ); // TODO: DONE
+    public static final Hook AB_TEST_CHECK_LONG = new Hook(
+            "AB_TEST_CHECK_LONG",
+            AB_TEST_MANAGER, "a", String.class, String.class, long.class
+    ); // TODO: DONE
+    public static final Hook AB_TEST_CHECK_BOOLEAN = new Hook(
+            "AB_TEST_CHECK_BOOLEAN",
+            AB_TEST_MANAGER, "a", String.class, String.class, boolean.class
+    ); // TODO: DONE
+    public static final Hook AB_TEST_CHECK_FLOAT = new Hook(
+            "AB_TEST_CHECK_FLOAT",
+            AB_TEST_MANAGER, "a", String.class, String.class, float.class
+    ); // TODO: DONE
+
 
     // CONSTRUCTORS ==============================================================
 
